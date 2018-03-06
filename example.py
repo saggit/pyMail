@@ -22,7 +22,7 @@ for num in rml.getUnread()[1][0].split(' '):
             fileob.close()
 
 #初始化发送邮件类
-sml = pyMail.SendMailDealer('mail_address','mail_pwd','smtp.gmail.com')
+sml = pyMail.SendMailDealer('mail_address','mail_pwd','smtp.gmail.com', 587)
 #设置邮件信息
 sml.setMailInfo('paramiao@gmail.com','测试','正文','plain','/home/paramiao/resume.html')
 #发送邮件
